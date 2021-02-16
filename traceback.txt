@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "sniper.py", line 74, in <module>
+  File "C:\Users\charl\AppData\Local\Programs\Python\Python38-32\lib\site-packages\discord\client.py", line 695, in run
+    future = asyncio.ensure_future(runner(), loop=loop)
+  File "C:\Users\charl\AppData\Local\Programs\Python\Python38-32\lib\asyncio\tasks.py", line 661, in ensure_future
+    task = loop.create_task(coro_or_future)
+  File "C:\Users\charl\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 429, in create_task
+    self._check_closed()
+  File "C:\Users\charl\AppData\Local\Programs\Python\Python38-32\lib\asyncio\base_events.py", line 508, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
