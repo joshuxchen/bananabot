@@ -1,5 +1,5 @@
 from datetime import timedelta
-from discord.ext import commands, timers
+from discord.ext import commands
 from itertools import cycle
 from random import choice
 from pyowm.owm import OWM
