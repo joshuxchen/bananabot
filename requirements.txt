@@ -1,2 +1,9 @@
+discord
 discord.py
-asyncio
+requests
+praw
+psycopg2
+wikipedia
+pyowm
+pyjokes
+youtube_dl
