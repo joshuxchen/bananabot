@@ -285,13 +285,7 @@ async def user(ctx, member: discord.Member = None):
     embed.add_field(name="Highest Role:", value=member.top_role.mention, inline=False)
     await ctx.send(embed=embed)
 
-# @client.command()
-# @commands.has_permissions(administrator=True)
-# async def shutdown(ctx):
-#     guild = ctx.guild
-#     await ctx.send("Deleting")
-#     for channel in guild.channels:
-#         await channel.delete()
+
 
 @client.command(description="Grabs extensive server info of the server you're in", aliases = ['server', 'si'])
 
@@ -559,25 +553,7 @@ async def guilds(ctx):
 
 
 
-client.timer_manager = timers.TimerManager(client)
 
-
-@client.command(name="remind")
-async def remind(ctx, time, *, text):
-    """Remind to do something on a date.
-
-    The date must be in ``Y/M/D`` format."""
-    date = datetime.datetime(*map(int, time.split("/")))
-
-    client.timer_manager.create_timer("reminder", date, args=(ctx.channel.id, ctx.author.id, text))
-    # or without the manager
-    timers.Timer(client, "reminder", date, args=(ctx.channel.id, ctx.author.id, text)).start()
-
-@client.event
-async def on_reminder(channel_id, author_id, text):
-    channel = client.get_channel(channel_id)
-
-    await channel.send("Hey, <@{0}>, remember to: {1}".format(author_id, text))
 
 
 
