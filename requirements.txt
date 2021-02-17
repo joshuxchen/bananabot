@@ -8,3 +8,4 @@ pyowm
 pyjokes
 youtube_dl
 covid
+chatdet=2.0
