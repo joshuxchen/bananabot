@@ -9,4 +9,4 @@ pyjokes
 youtube_dl
 covid
 PyNaCl 
-ffmpeg 
+FFmpeg
