@@ -58,7 +58,7 @@ class help(commands.Cog):
             help.set_thumbnail(url=yoshi.avatar_url)
             help.set_author(name="Help Page", icon_url=yoshi.avatar_url)
             help.add_field(name=":gear: Configuration", value="""Configuring <@787882180495278081> & servers!
-            ```\nsetprefix\nremoveprefix\nprefix\nshutdown (x)\nserver\nwhois\nstats\nping```""", inline=False)
+            ```\nsetprefix\nremoveprefix\nprefix\nshutdown (x)\nserver\nwhois\nstats\nping```""")
             help.add_field(name=f"{mod} Moderation", value="""Simple but ***powerful*** moderation!!
             ```\nmods\nkick\nban\nunban (x)\npurge\nnick\nnickall\nlock\nsnipe\nvcmute\nvcunmute```""")
             help.add_field(name=":face_with_raised_eyebrow: Meta", value="""Basically the "other" category
@@ -71,31 +71,7 @@ class help(commands.Cog):
             ```tex\n$about (x)\nplay\nstop\npause\nresume\nshuffle\nqueue\nnow\nremove\nvolume```""")
             help.set_footer(text=f"{lennnn} commands")
             await ctx.send(embed=help)
-            # def check(reaction, user):
-            #     return reaction.message.id == msg.id and user != self.client.user
-            # while True:
-            #     try:
-            #         reaction, user = await self.client.wait_for('reaction_add', timeout = 300.0, check = check)
-            #     except asyncio.TimeoutError:
-            #         return
-            #     try:
-            #         await reaction.remove(user)
-            #     except:
-            #         pass
-            #     if reaction.emoji == '◀️':
-            #         await msg.edit(content="test")
-                  
-            #     elif reaction.emoji == '▶️':
-            #         await msg.edit(content="test")
-                
-    @commands.command()
-    async def source(self, ctx, *, command):
-        source = str(inspect.getsource(self.client.get_command(command).callback))
-        fmt = '```py\n' + source.replace('\`', '\u200b`') + '\n```'
-        if len(fmt) > 2000:
-            await ctx.send("The code is too long for posting it here")
-        else:
-            return await ctx.send(fmt)
+
 
         
 def setup(client): 
