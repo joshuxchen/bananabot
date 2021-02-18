@@ -9,18 +9,8 @@ class help(commands.Cog):
 
         self.client.remove_command("help")
 
-    @commands.Cog.listener()
-    async def on_message(self, message):
-        if isinstance(message.channel, discord.DMChannel):
-            return
 
-    # @commands.Cog.listener()
-    # async def on_message(self, message):
-    #     if self.client.user.mentioned_in(message):
-    #         await message.channel.send("You can type `b help` for more info")
-
-    @commands.group(description="List of all commands", invoke_without_command=True)
-    
+    @commands.command(description="List of all commands")
     async def help(self, ctx, command = None):
         if command:
             com = commands.Bot.get_command(self.client, str(command))
