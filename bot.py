@@ -47,7 +47,7 @@ for file in os.listdir('./cogs'):
     if file.endswith('.py'):
         client.load_extension(f'cogs.{file[:-3]}')
 
-
+client.remove_command('help')
 @client.event 
 async def on_ready():
     print("Bot has connected to discord")
