@@ -51,7 +51,7 @@ client.remove_command('help')
 @client.event 
 async def on_ready():
     print("Bot has connected to discord")
-    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name=f"{primary_prefix}help"))
+    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name=f"{primary_prefix}help · dsc.gg/bananabot"))
 
 
 @client.event
