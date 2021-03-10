@@ -609,4 +609,4 @@ async def guilds(ctx):
 
 
 
-client.run('Nzg3ODgyMTgwNDk1Mjc4MDgx.X9badQ.v3UDjZ74Aoifv73H8bx-1WnTKs4')
+client.run('Nzg3ODgyMTgwNDk1Mjc4MDgx.X9badQ.QAFfFQyrn3GBlYHWJK8BTPOehac')
